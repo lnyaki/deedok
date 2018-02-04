@@ -1,0 +1,8 @@
+<div class="form-group {{context.divClass}}">
+	<label for=""> Categories</label>
+	<div>
+	{% for category in context.categories %}
+		<button class="btn btn-success"> {{category.n.name}}</button>
+	{% endfor %}
+	</div>
+</div>

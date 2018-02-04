@@ -1,0 +1,7 @@
+- go into your project directory
+- create virtualevn : virtualenv <env name>
+- activate virtualenv : source <env name>/bin/activate
+- create new project : django-admin startproject <project name> (start new django project)
+- launch server (django) : python3 manage.py runserver
+
+- leave virtualenv : deactivate

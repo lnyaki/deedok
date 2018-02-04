@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+{% block content %}
+
+{% if users %}
+<p>
+The search for <em>{{q|safe}}</em> give the following users:
+</p>
+<ul>
+{% for user in users %}
+<li>{{user[0]|safe}}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>
+There are no users for the query <em>{{q|safe}}</em>.
+</p>
+{% endif %}
+
+{% endblock %}

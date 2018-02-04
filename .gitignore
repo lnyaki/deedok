@@ -1,0 +1,10 @@
+# Ignore binary files
+bin/*
+lib/*
+include/*
+neo4j/data
+neo4j/logs
+redis/*
+pip-selfcheck.json
+bootstrap-3.3.7-dist/
+*.pyc

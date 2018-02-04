@@ -1,0 +1,40 @@
+category_name, parent_category
+weapon,@ROOT
+edged weapon, weapon
+firearm, weapon
+sword,edged weapon
+katana, sword
+wado ichimonji, katana
+Shusui, katana
+sandai kitetsu, katana
+knife,edged weapon
+rifle,firearm
+gun,firearm
+race, @ROOT
+human, race
+mink, race
+long arm tribe, race
+giant, race
+tontata, race
+fishman, race
+devil fruit, @ROOT
+logia, devil fruit
+paramecia, devil fruit
+zoan, devil fruit
+occupation, @ROOT
+pirate, occupation
+marine, occupation
+mountain bandit, occupation
+archeologist, occupation
+cook, occupation
+ship, @ROOT
+Going Merry, ship
+Thousand sunny, ship
+Oro Jackson, ship
+Moby Dick, ship
+pirate crew, @ROOT
+straw hat, pirate crew
+Akagami, pirate crew
+whitebeard, pirate crew
+Heart pirate, pirate crew
+location, @ROOT
