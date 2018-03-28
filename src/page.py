@@ -67,6 +67,7 @@ class Page():
 	def setDefaultScripts(self):
 		self.addDefaultScript('jquery-3.2.1.min.js')
 		self.addDefaultScript('bootstrap.min.js')
+		self.addDefaultScript('angular.min.js')
 		
 
 	def addScript(self, scriptLocalPath, blueprint=None):

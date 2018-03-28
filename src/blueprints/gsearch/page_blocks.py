@@ -11,3 +11,6 @@ def testForm():
 
 def button(value,buttonClass='',id='button'):
 	return render_template('gsearch/button.html',context={'content':value,'buttonClass':buttonClass,'id':id})
+
+def test_paragraph(data):
+	return render_template('gsearch/test_paragraph.html',context=data)

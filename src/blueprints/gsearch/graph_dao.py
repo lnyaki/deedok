@@ -21,7 +21,8 @@ class Graph_Dao():
 		
 
 	def getCategories(self):
-		return self.query("match (n) where n.name STARTS WITH 'To' return n")
+		#return self.query("match (n) where n.name STARTS WITH 'To' return n")
+		return self.query("MATCH (n:CATEGORY) return n.name as name LIMIT 10")
 		#return self.query("match(s:SYSTEM{name: 'categories'})-[r:BASE_CATEGORY]->(n:CATEGORY) return s,r,n")
 
 	def getMovies(self):

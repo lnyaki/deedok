@@ -9,16 +9,23 @@ def index():
 	graph 		= Graph_Dao()
 
 	categories = graph.getCategories()
-	#print(categories)
+	print(categories)
 	page.addScript("dbQueries.js","gsearch")
 	page.addScript("ajax.js")
 	page.addScript("testAjax.js","gsearch")
+	#page.addScript("angular.min.js")
+
 	page.addBlockCenter(blocks.testForm())
-	page.addBlockRight("<div> Test</div>")
+	page.addBlockCenter(blocks.test_paragraph({'name':"Super Name!"}))
+
+
 	page.addBlockLeft(blocks.categoriesButtonList(categories))
+	page.addBlockLeft(blocks.test_paragraph({'name':"Super Name, le 2e!"}))
+
 	page.addBlockRight(blocks.button("Delete graph","btn-danger","buttonID"))
 	page.addBlockRight(blocks.button("Create GSearch graph","btn-primary","gsearchButton"))
-	page.addBlockLeft("<div> Test</div>")
+	page.addBlockRight(blocks.test_paragraph({'name':"Super Name, le 3e!"}))
+	
 
 	return page.render()
 

@@ -38,3 +38,16 @@ Akagami, pirate crew
 whitebeard, pirate crew
 Heart pirate, pirate crew
 location, @ROOT
+character,@ROOT
+Monkey D. Luffy, character
+Nami, character
+Vinsmoke Sanji, character
+Roronoa Zoro, character
+Nico Robin, character
+Tony Tony Chopper, character
+Brook, character
+Franky, character
+Usopp, character
+name, @ROOT
+first name, name
+last name, name
