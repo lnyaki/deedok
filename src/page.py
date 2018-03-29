@@ -26,7 +26,7 @@ class Page():
 	_pageContent	= ''
 
 	
-
+	_pageElementsCounts = 0
 
 	def __init__(self,title):
 		self.initializeVariables()
@@ -214,3 +214,7 @@ class Page():
 									'scriptsBottom': scripts
 									}
 								)
+
+	def next_id(self):
+		self._pageElementsCounts = self._pageElementsCounts +1
+		return self._pageElementsCounts

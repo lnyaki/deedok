@@ -16,15 +16,15 @@ def index():
 	#page.addScript("angular.min.js")
 
 	page.addBlockCenter(blocks.testForm())
-	page.addBlockCenter(blocks.test_paragraph({'name':"Super Name!"}))
+	page.addBlockCenter(blocks.test_paragraph({'name':"Super Name!", 'id': page.next_id()}))
 
 
 	page.addBlockLeft(blocks.categoriesButtonList(categories))
-	page.addBlockLeft(blocks.test_paragraph({'name':"Super Name, le 2e!"}))
+	page.addBlockLeft(blocks.test_paragraph({'name':"Super Name, le 2e!", 'id': page.next_id()}))
 
 	page.addBlockRight(blocks.button("Delete graph","btn-danger","buttonID"))
 	page.addBlockRight(blocks.button("Create GSearch graph","btn-primary","gsearchButton"))
-	page.addBlockRight(blocks.test_paragraph({'name':"Super Name, le 3e!"}))
+	page.addBlockRight(blocks.test_paragraph({'name':"Super Name, le 3e!", 'id': page.next_id()}))
 	
 
 	return page.render()
