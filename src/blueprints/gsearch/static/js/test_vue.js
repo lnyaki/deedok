@@ -1,5 +1,5 @@
 var vm = new Vue({
-			el: '#test',
+			el: '#content',
 			data : {
 				a : "Hello World",
 				b : "Hipacayé motherfucker!"

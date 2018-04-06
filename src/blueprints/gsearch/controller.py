@@ -15,15 +15,15 @@ def index():
 	page.addScript("testAjax.js","gsearch")
 
 	page.addBlockCenter(blocks.testForm())
-	page.addBlockCenter(blocks.test_paragraph({'name':"Super Name!", 'id': page.next_id()}))
+	page.addBlockCenter(blocks.test_paragraph({'page': page,'name':"Super Name!", 'id': page.next_id()}))
 
 
-	page.addBlockLeft(blocks.categoriesButtonList(categories))
-	page.addBlockLeft(blocks.test_paragraph({'name':"Super Name, le 2e!", 'id': page.next_id()}))
+	page.addBlockLeft(blocks.categoriesButtonList({'categories': categories, 'page': page}))
+	page.addBlockLeft(blocks.test_paragraph({'page': page,'name':"Super Name, le 2e!", 'id': page.next_id()}))
 
 	page.addBlockRight(blocks.button("Delete graph","btn-danger","buttonID"))
 	page.addBlockRight(blocks.button("Create GSearch graph","btn-primary","gsearchButton"))
-	page.addBlockRight(blocks.test_paragraph({'name':"Super Name, le 3e!", 'id': page.next_id()}))
+	page.addBlockRight(blocks.test_paragraph({'page': page,'name':"Super Name, le 3e!", 'id': page.next_id()}))
 	
 
 	return page.render()

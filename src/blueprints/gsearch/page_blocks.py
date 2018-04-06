@@ -1,7 +1,8 @@
 from flask import render_template
 
-def categoriesButtonList(categories):
-	return render_template('gsearch/categoriesButtonList.html',context={'categories':categories,'divClass':' '})
+def categoriesButtonList(data):
+	data['divClass'] = ' '
+	return render_template('gsearch/categoriesButtonList.html',context=data)
 
 def movieList(movies):
 	return render_template('gsearch/moviesList.html',context={'movies':movies,'divClass':'test'})

@@ -4,15 +4,11 @@
 	{% for category in context.categories %}
 		<button class="btn btn-success"> {{category.name}}</button>
 	{% endfor %}
-	
-	</div>
-	<script>
-		//test with view script
-		var categoryView = new Vue({
-			data:{
-				testValue : "Ceci est la test value de Vue"
-			}
-		})
 
-	</script>
+	</div>
+	
+	<category-button v-for="category in categories" v-bind:name="category.name"></category-button>
 </div>
+
+{{ context.page.addScript("components/category_button.js")}}
+{{ context.page.addScript("button_list.js")}}

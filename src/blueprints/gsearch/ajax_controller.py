@@ -7,4 +7,4 @@ def getCategories(categories):
 	pprint("GetCategories, ajax_controller")
 	pprint(cats)
 
-	return jsonify("Data received ok!")
+	return jsonify("Data received Yeah!")
