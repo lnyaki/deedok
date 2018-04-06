@@ -10,10 +10,10 @@
         <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     </head>
-    <body ng-app="jboost">
+    <body>
 	{{context.scriptsTop|safe}}
         {% include "nav.html" %}
-        <div class="container-fluid">
+        <div id="content" class="container-fluid">
         {{context.content|safe}}
         </div>
         {{context.scriptsBottom|safe}}

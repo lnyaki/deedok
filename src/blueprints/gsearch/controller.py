@@ -13,7 +13,6 @@ def index():
 	page.addScript("dbQueries.js","gsearch")
 	page.addScript("ajax.js")
 	page.addScript("testAjax.js","gsearch")
-	#page.addScript("angular.min.js")
 
 	page.addBlockCenter(blocks.testForm())
 	page.addBlockCenter(blocks.test_paragraph({'name':"Super Name!", 'id': page.next_id()}))
@@ -26,6 +25,19 @@ def index():
 	page.addBlockRight(blocks.button("Create GSearch graph","btn-primary","gsearchButton"))
 	page.addBlockRight(blocks.test_paragraph({'name':"Super Name, le 3e!", 'id': page.next_id()}))
 	
+
+	return page.render()
+
+def vue():
+	page 	= Page('Vue.js test!')
+
+	data 	= {'page': page,
+			'firstname' : "Mr", 
+			'lastname' : "Business",
+			'test1' : "hello, ça marche mec!",
+			'test2' : "ça marche ou pas?"}
+	
+	page.addBlockCenter(blocks.vue_test(data))
 
 	return page.render()
 

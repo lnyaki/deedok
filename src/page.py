@@ -67,7 +67,7 @@ class Page():
 	def setDefaultScripts(self):
 		self.addDefaultScript('jquery-3.2.1.min.js')
 		self.addDefaultScript('bootstrap.min.js')
-		self.addDefaultScript('angular.min.js')
+		self.addDefaultScript('vue.js')
 		
 
 	def addScript(self, scriptLocalPath, blueprint=None):
@@ -96,6 +96,7 @@ class Page():
 			url_for("{blueprint}static".format(blueprint=blueprint),
 					filename=filename)
 		)
+
 
 	def setTitle(self,title):
 		self._pageTitle = title

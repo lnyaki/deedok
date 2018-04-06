@@ -6,7 +6,11 @@ import jboost_controller as jbc
 def routes(app):
 	@app.route('/',methods=['GET'])
 	def shokw():
-        	return controller.index() 
+        	return controller.index()
+
+	@app.route('/vue',methods=['GET'])
+	def vue():
+		return controller.vue()
 
 	@app.route('/test',methods=['GET'])
 	def test():

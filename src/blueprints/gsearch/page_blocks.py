@@ -14,3 +14,6 @@ def button(value,buttonClass='',id='button'):
 
 def test_paragraph(data):
 	return render_template('gsearch/test_paragraph.html',context=data)
+
+def vue_test(data):
+	return render_template('gsearch/vue_tests.html',context=data)

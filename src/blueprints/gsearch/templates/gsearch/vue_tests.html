@@ -1,0 +1,16 @@
+	
+
+<div id="test">
+
+	<p> test</p>
+
+	<h1>{{context.firstname}} {{context.lastname}}</h1>
+	{% raw %}
+	<h1>Not displayed : !{{a}} {{b}}</h1>
+
+	<h2>
+	{% endraw %}
+	
+</div>
+
+{{ context.page.addScript("test_vue.js", "gsearch")}}
