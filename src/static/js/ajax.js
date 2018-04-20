@@ -17,7 +17,15 @@ var MODULE = (function(module,$,moduleName){
 
 
 		local.success	= function(result, domElement){
-			$(htmlElement).text(result)
+			jsonResult = JSON.parse(result)
+			//$(htmlElement).text(result)
+			console.log("Ajax success : ")
+			console.log(domElement)
+			console.log(jsonResult)
+			console.log($(domElement).text())
+			$(domElement).append("fuck this")
+			console.log("Element : ")
+			console.log($(domElement).text())
 
 			
 		}

@@ -1,6 +1,5 @@
 from flask import Flask, request
 from . import controller 
-from blueprints.gsearch import ajax_controller as ajx
 import jboost_controller as jbc
 
 def routes(app):

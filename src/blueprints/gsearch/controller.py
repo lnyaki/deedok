@@ -28,6 +28,9 @@ def index():
 
 	return page.render()
 
+def toto():
+	return page.render()
+	
 def vue():
 	page 	= Page('Vue.js test!')
 
