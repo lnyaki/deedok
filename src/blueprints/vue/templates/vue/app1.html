@@ -1,0 +1,19 @@
+
+{% raw %}
+<div id="app">
+	<div>
+		<h1> {{title}}</h1>
+		<p>{{paragraph}}</p>
+	</div>
+	<form>
+		<input v-model="message" placeholder="Message here." name="text"/>
+		<br>
+		<input type="checkbox" id="cb1" v-model="checkbox"/>
+		<label for="cb1">{{checkbox}}</label>
+	</form>
+	<p>{{message}}</p>
+
+</div >
+{% endraw %}
+
+{{context.page.addScript("app1.js","vue")}}
