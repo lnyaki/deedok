@@ -14,5 +14,7 @@ def index():
 	page.addBlockCenter(blocks.vue_app1({'page': page, 'id': page.next_id()}))
 
 	page.addBlockRight(blocks.vue_form({'page': page, 'id': page.next_id()}))
+
+	page.addBlockLeft(blocks.vue_form({'page': page, 'id': page.next_id()}))
 	
 	return page.render()
