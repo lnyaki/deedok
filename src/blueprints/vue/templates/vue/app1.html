@@ -1,4 +1,7 @@
 
+{{context.page.addScript("app1.js","vue")}}
+{{context.page.addComponent("components/button_counter.vue",'vue')}}
+
 {% raw %}
 <div id="app">
 	<div>
@@ -11,9 +14,11 @@
 		<input type="checkbox" id="cb1" v-model="checkbox"/>
 		<label for="cb1">{{checkbox}}</label>
 	</form>
+	<button-counter></button-counter>
+	<button-counter></button-counter>
+	<button-counter></button-counter>
 	<p>{{message}}</p>
 
 </div >
 {% endraw %}
 
-{{context.page.addScript("app1.js","vue")}}

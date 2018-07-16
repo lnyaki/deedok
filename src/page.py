@@ -92,10 +92,12 @@ class Page():
 		if(urlList is None):
 			urlList = []
 
-		urlList.append(
-			url_for("{blueprint}static".format(blueprint=blueprint),
+		static_url = url_for("{blueprint}static".format(blueprint=blueprint),
 					filename=filename)
-		)
+
+		#we check existence of url to prevent adding it twice.
+		if (not static_url in urlList):
+			urlList.append(static_url)
 
 
 	def setTitle(self,title):
@@ -219,3 +221,8 @@ class Page():
 	def next_id(self):
 		self._pageElementsCounts = self._pageElementsCounts +1
 		return self._pageElementsCounts
+
+
+	def addComponent(self, path, blueprint_name = ''): 
+	#This function allows the import of vue component declarations in the page
+		return self.addDefaultScript("components/button_counter.vue",'vue')
