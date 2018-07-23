@@ -7,5 +7,5 @@ Vue.component('button-counter', {
       count: 0
     }
   },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+  template: '<button class="btn btn-primary" v-on:click="count++">You clicked me <b>{{ count }}</b> times.</button>'
 })

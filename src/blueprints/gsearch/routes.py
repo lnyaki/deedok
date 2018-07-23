@@ -12,9 +12,10 @@ def routes(app):
 	def vue():
 		return controller.vue()
 
-	@app.route('/test',methods=['GET'])
-	def test():
-		return jbc.test()
+	@app.route('/test/<username>/<int:id>',methods=['GET'])
+	def test(username, id):
+		print(request.args)
+		return jbc.test(username,id, request.args)
 
 	@app.route('/experiment',methods=['GET'])
 	def experiment():

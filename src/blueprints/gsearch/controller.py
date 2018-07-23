@@ -3,6 +3,7 @@ from page import Page
 from py2neo import Path, Walkable
 from blueprints.gsearch.graph_dao import Graph_Dao
 import blueprints.gsearch.page_blocks as blocks
+import blueprints.vue.page_blocks as vue_blocks
 
 def index():
 	page 		= Page('GSearch!')
@@ -20,6 +21,7 @@ def index():
 
 	page.addBlockLeft(blocks.categoriesButtonList({'categories': categories, 'page': page}))
 	page.addBlockLeft(blocks.test_paragraph({'page': page,'name':"Super Name, le 2e!", 'id': page.next_id()}))
+	page.addBlockLeft(vue_blocks.vue_form({'page' : page, 'id' : page.next_id()}))
 
 	page.addBlockRight(blocks.button("Delete graph","btn-danger","buttonID"))
 	page.addBlockRight(blocks.button("Create GSearch graph","btn-primary","gsearchButton"))

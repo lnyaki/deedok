@@ -23,7 +23,6 @@ var MODULE = (function(module,$,moduleName){
 			console.log(domElement)
 			console.log(jsonResult)
 			console.log($(domElement).text())
-			$(domElement).append("fuck this")
 			console.log("Element : ")
 			console.log($(domElement).text())
 

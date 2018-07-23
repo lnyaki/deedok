@@ -4,5 +4,9 @@ def homepage():
 	return render_template("base.html", context={'content' : "<div>coucou</div>"})
 
 
-def test():
-	return "jboost controller test "	
+def test(username, id, args):
+	print("---- ARGS -----")
+	print(args)
+	print(args.get('id'))
+	print(args.get('username'))
+	return "jboost controller test "+ username + " " + str(id)	

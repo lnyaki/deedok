@@ -1,3 +1,5 @@
+{{context.page.addComponent("category_button.vue")}}
+
 <div class="form-group {{context.divClass}}">
 	<label for=""> Categories</label>
 	<div>
@@ -10,5 +12,3 @@
 	<category-button v-for="category in categories" v-bind:name="category.name"></category-button>
 </div>
 
-{{ context.page.addScript("components/category_button.js")}}
-{{ context.page.addScript("button_list.js")}}

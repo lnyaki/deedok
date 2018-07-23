@@ -223,6 +223,6 @@ class Page():
 		return self._pageElementsCounts
 
 
-	def addComponent(self, path, blueprint_name = ''): 
+	def addComponent(self, path, blueprint_name = None): 
 	#This function allows the import of vue component declarations in the page
-		return self.addDefaultScript("components/button_counter.vue",'vue')
+		return self.addDefaultScript("components/"+ path, blueprint_name)
