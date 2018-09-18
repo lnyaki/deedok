@@ -12,5 +12,10 @@ pipeline {
 echo "Dammit"'''
       }
     }
+    stage('Failing script (on purpose)') {
+      steps {
+        sh './testScriptFail.sh'
+      }
+    }
   }
 }
