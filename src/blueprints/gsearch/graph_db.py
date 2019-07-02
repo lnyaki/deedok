@@ -1,4 +1,4 @@
-from py2neo import Graph, authenticate
+from py2neo import Graph
 
 class Graph_DB():
 
@@ -18,8 +18,9 @@ class Graph_DB():
 			USERNAME 	= "neo4j"
 			HOST 		= "localhost"
 			DBPATH 		= "/db/data"
-		
-			authenticate("{host}:{port}".format(host=HOST,port=PORT), USERNAME, PASSWORD)
+			
+
+			#authenticate("{host}:{port}".format(host=HOST,port=PORT), USERNAME, PASSWORD)
 			self.graph = Graph(host=HOST,http_port=9000,bolt_port=9001,bolt=False)
 
 			print("Graph --------")

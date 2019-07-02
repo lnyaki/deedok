@@ -1,4 +1,4 @@
-from py2neo import Graph, authenticate
+from py2neo import Graph
 from blueprints.gsearch.graph_db import Graph_DB
 
 class Graph_Dao():
