@@ -8,13 +8,13 @@ pipeline {
     }
     stage('Execute script') {
       steps {
-        sh '''./testScript.sh
+        sh '''./scripts/testScript.sh
 echo "Dammit"'''
       }
     }
     stage('Failing script (on purpose)') {
       steps {
-        sh './testScriptFail.sh'
+        sh './scripts/testScriptFail.sh'
       }
     }
   }
